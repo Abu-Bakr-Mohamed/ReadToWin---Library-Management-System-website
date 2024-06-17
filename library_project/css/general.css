@@ -1,0 +1,108 @@
+/* Global styles */
+
+/* General variables and font family*/
+:root {
+   --mainFont: rgb(248, 248, 248);
+   --mainColor: rgb(233, 105, 46);
+   --secColor: #001c1e;
+   --thirdColor: #3498db;
+
+   --transBackground: rgba(238, 238, 238, 0.106);
+   --mainBackground: #f6f6f6;
+   --secBackground: #ffa07a;
+   --thirdBackground: #778899;
+   font-family: "Nunito", sans-serif;
+}
+
+* {
+   box-sizing: border-box;
+   margin: 0;
+   padding: 0;
+}
+
+*:focus {
+   outline: none;
+}
+
+html {
+   font-size: 6.25%;
+   scroll-behavior: smooth;
+}
+
+body {
+   font-size: 16rem;
+   height: 100vh;
+}
+
+img {
+   max-width: 100%;
+   max-height: 100%;
+}
+
+a {
+   text-decoration: none;
+}
+
+button,
+input {
+   border: none;
+   outline: none;
+   font-family: inherit !important;
+}
+
+ul {
+   list-style: none;
+   list-style-type: none;
+}
+
+.error-message {
+   color: rgb(255, 21, 0);
+   font-size: 25rem;
+}
+
+/* Media queries */
+.container {
+   margin: 0 auto;
+}
+
+/* x-small devices */
+@media (max-width: 576px) {
+   .container {
+      width: 100%;
+   }
+}
+
+/*small devices */
+@media (min-width: 576px) {
+   .container {
+      width: 540px;
+   }
+}
+
+/*medium devices */
+@media (min-width: 768px) {
+   .container {
+      width: 720px;
+   }
+}
+
+/*large devices */
+@media (min-width: 992px) {
+   .container {
+      width: 960px;
+   }
+}
+
+/* x-large devices */
+@media (min-width: 1200px) {
+   .container {
+      width: 1140px;
+   }
+}
+
+/* xx-large devices */
+@media (min-width: 1400px) {
+   .container {
+      width: 1320px;
+   }
+}

@@ -1,0 +1,24 @@
+@media (max-width: 575px) {
+   section h2 {
+      font-size: 80rem;
+   }
+   section h2 + p {
+      letter-spacing: 0.1rem;
+   }
+}
+
+@media (max-width: 825px) {
+   header ul {
+      display: none;
+   }
+
+   header {
+      grid-template-columns: repeat(2, 1fr);
+   }
+}
+
+@media (max-width: 1200px) {
+   #rooms table {
+      width: 70%;
+   }
+}
