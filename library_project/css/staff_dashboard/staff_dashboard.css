@@ -1,0 +1,179 @@
+/* Global Styles */
+body {
+   background-color: var(--mainBackground);
+   display: flex;
+   flex-direction: column;
+}
+
+/* Header */
+header {
+   width: 100%;
+   height: 10vh;
+   display: grid;
+   grid-template-columns: 1fr auto;
+   align-items: center;
+   background-color: var(--secColor);
+   position: sticky;
+   top: 0;
+   z-index: 100;
+}
+
+.logo {
+   font-weight: 900;
+   color: var(--mainFont);
+   font-size: 30rem;
+   padding: 0 50rem;
+}
+
+.logo span {
+   color: var(--mainColor);
+}
+
+header button {
+   padding: 10rem;
+   cursor: pointer;
+   border-radius: 15rem;
+   margin-right: 15rem;
+   font-size: 10rem;
+   background-color: var(--thirdBackground);
+   transition: all 0.25s ease-out;
+   color: var(--mainFont);
+   font-weight: bold;
+}
+
+header button:hover {
+   background-color: var(--mainColor);
+   color: var(--secColor);
+}
+
+/* Main */
+main {
+   height: 90vh;
+   padding: 50rem 15rem;
+   display: flex;
+   flex-direction: column;
+}
+
+/* Search and add*/
+.search-add {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   gap: 20rem;
+}
+
+.search-container {
+   padding: 20rem 0;
+   display: flex;
+}
+
+.search-container label {
+   padding: 6rem 15rem;
+   background-color: #6f7e8e;
+   color: var(--mainFont);
+   border-radius: 10rem 0 0 10rem;
+}
+
+#search {
+   height: 35rem;
+   padding: 10rem;
+   border-radius: 0 10rem 0 0;
+}
+
+.wrap-input {
+   position: relative;
+   overflow: hidden;
+}
+
+.wrap-input::before {
+   content: "";
+   width: 100%;
+   height: 4.86%;
+   position: absolute;
+   left: -100%;
+   bottom: 0;
+   background-color: var(--mainColor);
+   transition: left 0.5s;
+   z-index: 1;
+}
+
+.wrap-input:focus-within::before {
+   left: 0;
+}
+
+.add {
+   background-color: var(--thirdColor);
+}
+
+.add a {
+   color: var(--mainFont);
+}
+
+/* Table */
+table {
+   border-collapse: collapse;
+   margin: 0 auto;
+}
+
+/* Table Header Styles */
+thead {
+   background-color: #333;
+   color: white;
+}
+
+th,
+td {
+   padding: 12rem;
+   text-align: center;
+   border-bottom: 1rem solid #ddd;
+}
+
+th:last-child {
+   color: cyan;
+}
+
+tbody tr:nth-child(even) {
+   background-color: #f2f2f2;
+}
+
+tbody tr td:nth-child(2) {
+   width: 300rem;
+}
+
+tbody tr td:nth-child(3) {
+   width: 150rem;
+}
+
+/* Book Image Styles */
+.book-image {
+   width: 60rem;
+   height: 80rem;
+   background-size: cover;
+   background-position: center;
+   border-radius: 5rem;
+}
+
+/* Edit and Delete buttons */
+.buttons {
+   display: flex;
+   gap: 25rem;
+   justify-content: flex-end;
+}
+
+main button {
+   padding: 8rem 10rem;
+   border-radius: 10%;
+   background-color: var(--mainColor);
+   color: var(--mainFont);
+   cursor: pointer;
+   opacity: 0.8;
+   transition: all 0.15s ease-in-out;
+}
+
+.buttons .edit {
+   background-color: var(--secColor);
+}
+
+button:hover {
+   opacity: 1;
+}
